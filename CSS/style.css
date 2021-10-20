@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background:url("../img/bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+#board {
+    display: grid;
+    background: linear-gradient(green, yellow);
+    border: 2px solid black;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+    height: 92vmin;
+    width: 80vmin;
+}
+
+.head {
+    background-color: red;
+    border-radius: 10px;
+    border: 2px solid rgb(129, 81, 81);
+    transform: scale(1.25);
+}
+
+.food {
+    border-radius: 10px;
+    border: 2px solid rgb(27, 204, 195);
+    background:linear-gradient(rgb(47, 16, 187),rgb(194, 44, 7));
+}
+
+.snake {
+    border-radius: 10px;
+    border: 2px solid rgb(35, 18, 182);
+    background-color: purple;
+}
+
+#ScoreBox{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 5vh;
+    line-height: 10px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#highestScoreBox{
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    font-size: 5vh;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
